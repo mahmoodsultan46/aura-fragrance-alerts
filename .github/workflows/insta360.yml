@@ -27,5 +27,5 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
       - name: Check US lens availability
         env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.INSTA360_DISCORD_WEBHOOK_URL }}
         run: python3 insta360_monitor.py --git-persist
