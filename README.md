@@ -2,7 +2,7 @@
 
 Checks the entire [Men's New Arrivals collection](https://www.aurafragrance.com/collections/mens-new-arrivals) on a five-minute GitHub Actions schedule and sends newly seen products to a Discord channel. Runs in GitHub's cloud while your computer is off. Python standard library only; no AI/API subscription.
 
-The repository also includes a separate **Insta360 lens stock** workflow for the [Ultra Telephoto Lens for Luna Ultra, SKU 7069](https://store.insta360.com/product/ultra-telephoto-lens-for-luna-ultra?c=7069), in the **United States** store. It uses the same private Discord webhook and runs on its own five-minute schedule. Its first run silently records the current availability. After that it alerts once when the lens changes from unavailable to available, and rearms after it goes out of stock again. Its green Discord card includes the product link, US price, and store region.
+The repository also includes a separate **Insta360 lens stock** workflow for the [Ultra Telephoto Lens for Luna Ultra, SKU 7069](https://store.insta360.com/product/ultra-telephoto-lens-for-luna-ultra?c=7069), in the **United States** store. It uses its own private Discord webhook, stored as `INSTA360_DISCORD_WEBHOOK_URL`, and runs on its own five-minute schedule. Its first run silently records the current availability. After that it alerts once when the lens changes from unavailable to available, and rearms after it goes out of stock again. Its green Discord card includes the product link, US price, and store region.
 
 The lens monitor requires the exact SKU, US/USD region, normal sale flags, structured offer, and enabled **Add to cart** button to agree. A positive internal stock count alone does not trigger an alert. Pre-sale/pre-order or ambiguous page states do not trigger an in-stock alert. The lens history and pending deliveries are stored separately in `state/insta360-lens.json`. The original fragrance workflow continues independently; the two workflows share a commit lock so they can safely update the repository. The timing and delivery limitations below apply to both monitors.
 
@@ -22,6 +22,8 @@ The lens monitor requires the exact SKU, US/USD region, normal sale flags, struc
 4. In GitHub, open **Settings → Secrets and variables → Actions → New repository secret**. Name it `DISCORD_WEBHOOK_URL`; paste the webhook as the value. Never put the URL in source code, an issue, or the README.
 5. Open **Actions → Aura new arrivals → Run workflow**. The first run creates the baseline without alerts. Check its log says `Baseline saved` and the new `state/seen.json` commit exists.
 6. Run the workflow once more. It should report zero new-product alerts. Future scheduled runs will alert for new IDs.
+
+For the Insta360 lens alerts, create another webhook for the separate Discord channel. In GitHub, open **Settings → Secrets and variables → Actions → New repository secret**, name it `INSTA360_DISCORD_WEBHOOK_URL`, and paste that new webhook URL as the value. Keep the existing `DISCORD_WEBHOOK_URL` secret for Aura fragrance alerts. Then open **Actions → Insta360 lens stock → Run workflow** and verify the run succeeds. Add both `.github/workflows/insta360.yml` and the lens monitor files when setting up a new repository; each workflow reads only its own webhook secret.
 
 To receive push notifications for channel messages, set the Discord alert channel's notification setting to **All Messages** and make sure it is not muted. The monitor does not ping everyone or require a Discord bot.
 
