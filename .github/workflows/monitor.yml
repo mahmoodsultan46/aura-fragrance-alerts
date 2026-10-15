@@ -1,0 +1,32 @@
+name: Aura new arrivals
+
+on:
+  schedule:
+    # Every five minutes, offset from the busy start of the hour.
+    - cron: '2-59/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: aura-new-arrivals
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    # Standard runners in a public repository are free. Do not use larger runners.
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - name: Configure state commits
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+      - name: Check for new products
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python3 monitor.py --git-persist
