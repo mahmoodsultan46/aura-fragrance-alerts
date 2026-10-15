@@ -2,6 +2,10 @@
 
 Checks the entire [Men's New Arrivals collection](https://www.aurafragrance.com/collections/mens-new-arrivals) on a five-minute GitHub Actions schedule and sends newly seen products to a Discord channel. Runs in GitHub's cloud while your computer is off. Python standard library only; no AI/API subscription.
 
+The repository also includes a separate **Insta360 lens stock** workflow for the [Ultra Telephoto Lens for Luna Ultra, SKU 7069](https://store.insta360.com/product/ultra-telephoto-lens-for-luna-ultra?c=7069), in the **United States** store. It uses the same private Discord webhook and runs on its own five-minute schedule. Its first run silently records the current availability. After that it alerts once when the lens changes from unavailable to available, and rearms after it goes out of stock again. Its green Discord card includes the product link, US price, and store region.
+
+The lens monitor requires the exact SKU, US/USD region, normal sale flags, structured offer, and enabled **Add to cart** button to agree. A positive internal stock count alone does not trigger an alert. Pre-sale/pre-order or ambiguous page states do not trigger an in-stock alert. The lens history and pending deliveries are stored separately in `state/insta360-lens.json`. The original fragrance workflow continues independently; the two workflows share a commit lock so they can safely update the repository. The timing and delivery limitations below apply to both monitors.
+
 ## What “new only” means
 
 - The first successful run silently saves all current products. It sends no product alerts.
@@ -42,6 +46,7 @@ Concurrent monitor runs are serialized. Avoid editing `state/seen.json` manually
 ```sh
 python3 -m unittest -v
 python3 monitor.py --dry-run
+python3 insta360_monitor.py --dry-run
 ```
 
 The dry run reads every live page without saving history or contacting Discord.
