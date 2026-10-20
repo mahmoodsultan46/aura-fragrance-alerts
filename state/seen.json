@@ -1,7 +1,18 @@
 {
   "baseline_date": "2026-10-15",
   "last_success_date": "2026-10-20",
-  "pending": [],
+  "pending": [
+    {
+      "handle": "citizen-x-ex-nihilo-unisex-edp",
+      "id": "8450985132095",
+      "title": "Citizen X Ex Nihilo Unisex EDP"
+    },
+    {
+      "handle": "mind-games-playmate-unisex-extrait-de-parfum",
+      "id": "8450982314047",
+      "title": "Mind Games Playmate Unisex Extrait de Parfum"
+    }
+  ],
   "seen": [
     "10006832705",
     "10012594817",
@@ -2159,6 +2170,8 @@
     "8448676233279",
     "8448677118015",
     "8448678363199",
+    "8450982314047",
+    "8450985132095",
     "8941625537",
     "8941628353",
     "8994706369",
