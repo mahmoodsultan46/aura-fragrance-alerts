@@ -1,7 +1,13 @@
 {
   "baseline_date": "2026-10-15",
   "last_success_date": "2026-10-23",
-  "pending": [],
+  "pending": [
+    {
+      "handle": "doux-ennui-house-of-oud-unisex-edp",
+      "id": "8455523762239",
+      "title": "Doux Ennui House of Oud Unisex EDP"
+    }
+  ],
   "seen": [
     "10006832705",
     "10012594817",
@@ -2161,6 +2167,7 @@
     "8448678363199",
     "8450982314047",
     "8450985132095",
+    "8455523762239",
     "8941625537",
     "8941628353",
     "8994706369",
