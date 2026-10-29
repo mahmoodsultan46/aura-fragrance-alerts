@@ -1,7 +1,18 @@
 {
   "baseline_date": "2026-10-15",
-  "last_success_date": "2026-10-28",
-  "pending": [],
+  "last_success_date": "2026-10-29",
+  "pending": [
+    {
+      "handle": "mont-blanc-explorer-platinum-set-34oz-edp-2x25oz-edp-34oz-sg",
+      "id": "8481702379583",
+      "title": "Mont Blanc Explorer Platinum Set 3.4oz EDP & 2x.25oz EDP & 3.4oz SG"
+    },
+    {
+      "handle": "concentre-dorange-verte-hermes-for-men-edt",
+      "id": "8481063174207",
+      "title": "Concentre D'Orange Verte Hermes for Men EDT"
+    }
+  ],
   "seen": [
     "10006832705",
     "10012594817",
@@ -2165,6 +2176,8 @@
     "8455551418431",
     "8455558922303",
     "8455565213759",
+    "8481063174207",
+    "8481702379583",
     "8941625537",
     "8941628353",
     "8994706369",
