@@ -1,7 +1,18 @@
 {
   "baseline_date": "2026-10-15",
   "last_success_date": "2026-11-03",
-  "pending": [],
+  "pending": [
+    {
+      "handle": "pasha-de-cartier-noir-absolu-for-men-by-cartier-edp",
+      "id": "8495441608767",
+      "title": "Pasha de Cartier Noir Absolu for Men by Cartier EDP"
+    },
+    {
+      "handle": "coach-pure-platinum-parfum-for-men-edp",
+      "id": "8495202336831",
+      "title": "Coach Pure Platinum Parfum for Men EDP"
+    }
+  ],
   "seen": [
     "10006832705",
     "10012594817",
@@ -2171,6 +2182,8 @@
     "8482559393855",
     "8482746826815",
     "8492426821695",
+    "8495202336831",
+    "8495441608767",
     "8941625537",
     "8941628353",
     "8994706369",
