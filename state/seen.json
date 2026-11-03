@@ -1,7 +1,13 @@
 {
   "baseline_date": "2026-10-15",
   "last_success_date": "2026-11-03",
-  "pending": [],
+  "pending": [
+    {
+      "handle": "tom-ford-bois-pacifique-for-men-edp",
+      "id": "8495673409599",
+      "title": "Tom Ford Bois Pacifique for Men EDP"
+    }
+  ],
   "seen": [
     "10006832705",
     "10012594817",
@@ -2173,6 +2179,7 @@
     "8492426821695",
     "8495202336831",
     "8495441608767",
+    "8495673409599",
     "8941625537",
     "8941628353",
     "8994706369",
