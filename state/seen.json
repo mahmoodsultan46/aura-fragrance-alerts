@@ -1,7 +1,28 @@
 {
   "baseline_date": "2026-10-15",
   "last_success_date": "2026-11-05",
-  "pending": [],
+  "pending": [
+    {
+      "handle": "i-will-giorgio-armani-for-men-edp",
+      "id": "8501688041535",
+      "title": "I Will Giorgio Armani for Men EDP"
+    },
+    {
+      "handle": "mont-blanc-legend-elixir-for-men-parfum",
+      "id": "8501675556927",
+      "title": "Mont Blanc Legend Elixir for Men Parfum"
+    },
+    {
+      "handle": "mont-blanc-explorer-infinite-for-men-edp",
+      "id": "8501649899583",
+      "title": "Mont Blanc Explorer Infinite for Men EDP"
+    },
+    {
+      "handle": "g-light-blue-men-set-34oz-edt-17oz-edt",
+      "id": "8501634269247",
+      "title": "&G Light Blue Men Set 3.4oz EDT & 1.7oz EDT"
+    }
+  ],
   "seen": [
     "10006832705",
     "10012594817",
@@ -2175,6 +2196,10 @@
     "8495441608767",
     "8495673409599",
     "8496687808575",
+    "8501634269247",
+    "8501649899583",
+    "8501675556927",
+    "8501688041535",
     "8941625537",
     "8941628353",
     "8994706369",
