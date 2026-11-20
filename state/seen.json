@@ -1,7 +1,18 @@
 {
   "baseline_date": "2026-10-15",
-  "last_success_date": "2026-11-19",
-  "pending": [],
+  "last_success_date": "2026-11-20",
+  "pending": [
+    {
+      "handle": "amber-roses-mancera-unisex-edp",
+      "id": "8541456990271",
+      "title": "Amber & Roses Mancera Unisex EDP"
+    },
+    {
+      "handle": "eternal-wood-mancera-unisex-edp",
+      "id": "8541453025343",
+      "title": "Eternal Wood Mancera Unisex EDP"
+    }
+  ],
   "seen": [
     "10006832705",
     "10012594817",
@@ -2179,6 +2190,8 @@
     "8501649899583",
     "8501675556927",
     "8501688041535",
+    "8541453025343",
+    "8541456990271",
     "8941625537",
     "8941628353",
     "8994706369",
