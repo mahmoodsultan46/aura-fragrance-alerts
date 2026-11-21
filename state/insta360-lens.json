@@ -3,16 +3,7 @@
   "baseline_date": "2026-10-15",
   "country": "US",
   "last_success_date": "2026-11-21",
-  "pending": [
-    {
-      "available": true,
-      "country": "US",
-      "detected_on": "2026-11-21",
-      "id": "1f323f76-ee1e-47bb-ba9e-79a82ae4a90b",
-      "price": "$49.99",
-      "sku": "7069"
-    }
-  ],
+  "pending": [],
   "sku": "7069",
   "version": 1
 }
