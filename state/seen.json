@@ -1,7 +1,18 @@
 {
   "baseline_date": "2026-10-15",
   "last_success_date": "2026-11-23",
-  "pending": [],
+  "pending": [
+    {
+      "handle": "ombre-tonka-mancera-unisex-edp",
+      "id": "8547873030207",
+      "title": "Ombre Tonka Mancera Unisex EDP"
+    },
+    {
+      "handle": "this-is-really-him-zadig-voltaire-for-men-edt",
+      "id": "8547829809215",
+      "title": "This is Really Him! Zadig & Voltaire for Men EDT"
+    }
+  ],
   "seen": [
     "10006832705",
     "10012594817",
@@ -2181,6 +2192,8 @@
     "8501688041535",
     "8541453025343",
     "8541456990271",
+    "8547829809215",
+    "8547873030207",
     "8941625537",
     "8941628353",
     "8994706369",
