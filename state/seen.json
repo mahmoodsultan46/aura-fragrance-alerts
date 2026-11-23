@@ -1,7 +1,18 @@
 {
   "baseline_date": "2026-10-15",
   "last_success_date": "2026-11-23",
-  "pending": [],
+  "pending": [
+    {
+      "handle": "maison-martin-margiela-mini-set-10x2ml-sprays",
+      "id": "8548399939647",
+      "title": "Maison Martin Margiela Mini Set 10x2ml Sprays"
+    },
+    {
+      "handle": "lady-million-gold-for-her-pure-diamonds-by-paco-rabanne-edp",
+      "id": "8548290756671",
+      "title": "Lady Million Gold for Her Pure Diamonds by Paco Rabanne EDP"
+    }
+  ],
   "seen": [
     "10006832705",
     "10012594817",
@@ -2183,6 +2194,8 @@
     "8541456990271",
     "8547829809215",
     "8547873030207",
+    "8548290756671",
+    "8548399939647",
     "8941625537",
     "8941628353",
     "8994706369",
