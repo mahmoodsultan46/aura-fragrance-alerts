@@ -1,7 +1,18 @@
 {
   "baseline_date": "2026-10-15",
-  "last_success_date": "2026-11-23",
-  "pending": [],
+  "last_success_date": "2026-11-24",
+  "pending": [
+    {
+      "handle": "memo-paris-indian-leather-unisex-edp",
+      "id": "8549931515967",
+      "title": "Memo Paris Indian Leather Unisex EDP"
+    },
+    {
+      "handle": "boss-bottled-absolu-intense-for-men-edp",
+      "id": "8549855002687",
+      "title": "Boss Bottled Absolu Intense for Men EDP"
+    }
+  ],
   "seen": [
     "10006832705",
     "10012594817",
@@ -2185,6 +2196,8 @@
     "8547873030207",
     "8548290756671",
     "8548399939647",
+    "8549855002687",
+    "8549931515967",
     "8941625537",
     "8941628353",
     "8994706369",
