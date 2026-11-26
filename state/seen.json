@@ -1,7 +1,33 @@
 {
   "baseline_date": "2026-10-15",
-  "last_success_date": "2026-11-25",
-  "pending": [],
+  "last_success_date": "2026-11-26",
+  "pending": [
+    {
+      "handle": "wild-rush-initio-unisex-edp",
+      "id": "8556692930623",
+      "title": "Wild Rush Initio Unisex EDP"
+    },
+    {
+      "handle": "creed-wild-vetiver-unisex-edp",
+      "id": "8556658163775",
+      "title": "Creed Wild Vetiver Unisex EDP"
+    },
+    {
+      "handle": "sugar-blast-initio-unisex-edp",
+      "id": "8556640731199",
+      "title": "Sugar Blast Initio Unisex EDP"
+    },
+    {
+      "handle": "eau-de-rhubarbe-ecarlate-hermes-unisex-edc",
+      "id": "8556621758527",
+      "title": "Eau De Rhubarbe Ecarlate Hermes Unisex EDC"
+    },
+    {
+      "handle": "polo-67-for-men-edp",
+      "id": "8555940446271",
+      "title": "Polo 67 for Men EDP"
+    }
+  ],
   "seen": [
     "10006832705",
     "10012594817",
@@ -2187,6 +2213,11 @@
     "8548399939647",
     "8549855002687",
     "8549931515967",
+    "8555940446271",
+    "8556621758527",
+    "8556640731199",
+    "8556658163775",
+    "8556692930623",
     "8941625537",
     "8941628353",
     "8994706369",
